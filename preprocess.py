@@ -34,21 +34,21 @@ class Net(nn.Module):
         self.dropout2 = nn.Dropout2d(0.5)
         self.fc1 = nn.Linear(12544, 128)
         self.fc2 = nn.Linear(128, 100)
-          
+
     def forward(self, x):
         x = self.conv1(x)
         x = F.relu(x)
-        x = self.conv2(x) 
+        x = self.conv2(x)
         x = F.max_pool2d(x, 2)
         x = self.dropout1(x)
         x = torch.flatten(x, 1)
-        x = self.fc1(x) 
-        x = F.relu(x) 
+        x = self.fc1(x)
+        x = F.relu(x)
         x = self.dropout2(x)
-        x = self.fc2(x) 
+        x = self.fc2(x)
         output = F.log_softmax(x, dim=1)
         return output
-    
+
 def train(args, model, device, train_loader, optimizer, epoch):
     model.train()
     for batch_idx, (data, target) in enumerate(train_loader):
@@ -82,7 +82,7 @@ def test(args, model, device, test_loader):
     print('\nTest set: Average loss: {:.4f}, Accuracy: {}/{} ({:.0f}%)\n'.format(
         test_loss, correct, len(test_loader.dataset),
         100. * correct / len(test_loader.dataset)))
-    
+
     return 1 - correct / len(test_loader.dataset)
 
 def objective(trial):
@@ -154,6 +154,7 @@ if __name__ == '__main__':
     parser.add_argument('--save-model', action='store_true', default=False,
                         help='For Saving the current Model')
     parser.add_argument('--task', '-t', type=str, help='Task name')
+
     parser.add_argument('--gpu', '-g', type=int,
                         nargs='?', help='GPU ids to use')
 
@@ -175,12 +176,11 @@ if __name__ == '__main__':
     kwargs = {'num_workers': 1, 'pin_memory': True} if use_cuda else {}
 
     preprocess_func = select_preprocess(args,task)
+    #print(preprocess_func)
 
-    print(preprocess_func)
-
-"""
 #最適化された時の目的関数の値
-study.best_value
+#study.best_value
 #全試行結果
-study.trials
-"""
+#study.trials
+
+
