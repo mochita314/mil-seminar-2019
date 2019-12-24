@@ -87,8 +87,13 @@ def test(args, model, device, test_loader):
 
 def objective(trial):
 
-    mean = trial.suggest_uniform("mean",0.1,0.9)
-    std = trial.suggest_uniform("std",0.1,0.9)
+    mean1 = trial.suggest_uniform("mean1",0.1,0.9)
+    mean2 = trial.suggest_uniform("mean1",0.1,0.9)
+    mean3 = trial.suggest_uniform("mean1",0.1,0.9)
+
+    std1 = trial.suggest_uniform("std1",0.1,0.9)
+    std2 = trial.suggest_uniform("std2",0.1,0.9)
+    std3 = trial.suggest_uniform("std3",0.1,0.9)
 
     model = Net().to(device)
     optimizer = optim.Adadelta(model.parameters(), lr=1.0)
@@ -126,10 +131,16 @@ def select_preprocess(args: Namespace, task: Task) -> Compose:
     study.optimize(objective,n_trials=TRIAL_SIZE)
 
     #最適なパラメータ
-    mean = study.best_params['mean']
-    std = study.best_params['std']
+    mean1 = study.best_params['mean1']
+    mean2 = study.best_params['mean2']
+    mean3 = study.best_params['mean3']
 
-    preprocess_func = Compose([transforms.ToTensor(),transforms.Normalize((mean,mean,mean),(std,std,std))])
+    std1 = study.best_params['std1']
+    std2 = study.best_params['std1']
+    std3 = study.best_params['std1']
+
+    preprocess_func = Compose([transforms.ToTensor(),transforms.Normalize((mean1,mean2,mean3),(std1,std2,std3))])
+    
     return preprocess_func
 
 if __name__ == '__main__':
