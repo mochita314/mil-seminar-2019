@@ -98,7 +98,7 @@ def objective(trial):
     model = Net().to(device)
     optimizer = optim.Adadelta(model.parameters(), lr=1.0)
 
-    preprocess_func = Compose([transforms.ToTensor(),transforms.Normalize((mean,mean,mean),(std,std,std))])
+    preprocess_func = Compose([transforms.ToTensor(),transforms.Normalize((mean1,mean2,mean3),(std1,std2,std3))])
 
     train_loader = torch.utils.data.DataLoader(
         datasets.CIFAR100('../data', train=True, download=True,
@@ -142,6 +142,7 @@ def select_preprocess(args: Namespace, task: Task) -> Compose:
     preprocess_func = Compose([transforms.ToTensor(),transforms.Normalize((mean1,mean2,mean3),(std1,std2,std3))])
     
     return preprocess_func
+
 
 if __name__ == '__main__':
 
@@ -187,7 +188,7 @@ if __name__ == '__main__':
     kwargs = {'num_workers': 1, 'pin_memory': True} if use_cuda else {}
 
     preprocess_func = select_preprocess(args,task)
-    #print(preprocess_func)
+    print(preprocess_func)
 
 #最適化された時の目的関数の値
 #study.best_value

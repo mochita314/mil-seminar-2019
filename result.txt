@@ -1,0 +1,199 @@
+[FrozenTrial(number=0, state=TrialState.COMPLETE, value=0.6292, datetime_start=datetime.datetime(2019, 12, 21, 22, 48, 12, 470769),
+ datetime_complete=datetime.datetime(2019, 12, 21, 23, 6, 33, 487549), params={'mean': 0.7851816587467776, 'std': 0.8366781932402603}, 
+ distributions={'mean': UniformDistribution(high=0.9, low=0.1), 'std': UniformDistribution(high=0.9, low=0.1)}, user_attrs={}, system_attrs={'_number': 0}, intermediate_values={}, trial_id=0), 
+ 
+ FrozenTrial(number=1, state=TrialState.COMPLETE, value=0.6263000000000001, datetime_start=datetime.datetime(2019, 12, 21, 23, 6, 33, 487857), 
+ datetime_complete=datetime.datetime(2019, 12, 21, 23, 24, 41, 224143), params={'mean': 0.5928430140263146, 'std': 0.7244243870224748},
+  distributions={'mean': UniformDistribution(high=0.9, low=0.1), 'std': UniformDistribution(high=0.9, low=0.1)}, user_attrs={}, system_attrs={'_number': 1}, intermediate_values={}, trial_id=1), 
+  
+  FrozenTrial(number=2, state=TrialState.COMPLETE, value=0.6109, datetime_start=datetime.datetime(2019, 12, 21, 23, 24, 41, 224652), 
+  datetime_complete=datetime.datetime(2019, 12, 21, 23, 42, 58, 565488), params={'mean': 0.28647225350438443, 'std': 0.5956314979922902}, 
+  distributions={'mean': UniformDistribution(high=0.9, low=0.1), 'std': UniformDistribution(high=0.9, low=0.1)}, user_attrs={}, system_attrs={'_number': 2}, intermediate_values={}, trial_id=2), 
+  
+  FrozenTrial(number=3, state=TrialState.COMPLETE, value=0.6261, datetime_start=datetime.datetime(2019, 12, 21, 23, 42, 58, 565878), 
+  datetime_complete=datetime.datetime(2019, 12, 22, 0, 1, 9, 210293), params={'mean': 0.6984405158764946, 'std': 0.2663390348522431}, 
+  distributions={'mean': UniformDistribution(high=0.9, low=0.1), 'std': UniformDistribution(high=0.9, low=0.1)}, user_attrs={}, system_attrs={'_number': 3}, intermediate_values={}, trial_id=3), 
+  
+  FrozenTrial(number=4, state=TrialState.COMPLETE, value=0.6157, datetime_start=datetime.datetime(2019, 12, 22, 0, 1, 9, 210757), 
+  datetime_complete=datetime.datetime(2019, 12, 22, 0, 19, 22, 588268), params={'mean': 0.5473753106134494, 'std': 0.17234193733907813}, 
+  distributions={'mean': UniformDistribution(high=0.9, low=0.1), 'std': UniformDistribution(high=0.9, low=0.1)}, user_attrs={}, system_attrs={'_number': 4}, intermediate_values={}, trial_id=4), 
+  
+  FrozenTrial(number=5, state=TrialState.COMPLETE, value=0.6218, datetime_start=datetime.datetime(2019, 12, 22, 0, 19, 22, 588663), 
+  datetime_complete=datetime.datetime(2019, 12, 22, 0, 35, 44, 154921), params={'mean': 0.2539935811129165, 'std': 0.602726423964764}, 
+  distributions={'mean': UniformDistribution(high=0.9, low=0.1), 'std': UniformDistribution(high=0.9, low=0.1)}, user_attrs={}, system_attrs={'_number': 5}, intermediate_values={}, trial_id=5), 
+  
+  FrozenTrial(number=6, state=TrialState.COMPLETE, value=0.6298, datetime_start=datetime.datetime(2019, 12, 22, 0, 35, 44, 155295), 
+  datetime_complete=datetime.datetime(2019, 12, 22, 0, 50, 18, 54439), params={'mean': 0.10600619468238115, 'std': 0.6669697614973188}, 
+  distributions={'mean': UniformDistribution(high=0.9, low=0.1), 'std': UniformDistribution(high=0.9, low=0.1)}, user_attrs={}, system_attrs={'_number': 6}, intermediate_values={}, trial_id=6), 
+  
+  FrozenTrial(number=7, state=TrialState.COMPLETE, value=0.616, datetime_start=datetime.datetime(2019, 12, 22, 0, 50, 18, 54705), 
+  datetime_complete=datetime.datetime(2019, 12, 22, 1, 5, 0, 828586), params={'mean': 0.29437527294680244, 'std': 0.7407433231761004}, 
+  distributions={'mean': UniformDistribution(high=0.9, low=0.1), 'std': UniformDistribution(high=0.9, low=0.1)}, user_attrs={}, system_attrs={'_number': 7}, intermediate_values={}, trial_id=7), 
+  
+  FrozenTrial(number=8, state=TrialState.COMPLETE, value=0.6159, datetime_start=datetime.datetime(2019, 12, 22, 1, 5, 0, 829090), 
+  datetime_complete=datetime.datetime(2019, 12, 22, 1, 19, 36, 967146), params={'mean': 0.4822729471624475, 'std': 0.2938514218155295}, 
+  distributions={'mean': UniformDistribution(high=0.9, low=0.1), 'std': UniformDistribution(high=0.9, low=0.1)}, user_attrs={}, system_attrs={'_number': 8}, intermediate_values={}, trial_id=8), 
+  
+  FrozenTrial(number=9, state=TrialState.COMPLETE, value=0.6132, datetime_start=datetime.datetime(2019, 12, 22, 1, 19, 36, 967436), 
+  datetime_complete=datetime.datetime(2019, 12, 22, 1, 34, 24, 400814), params={'mean': 0.6051516618923387, 'std': 0.6655996773480005}, 
+  distributions={'mean': UniformDistribution(high=0.9, low=0.1), 'std': UniformDistribution(high=0.9, low=0.1)}, user_attrs={}, system_attrs={'_number': 9}, intermediate_values={}, trial_id=9), 
+  
+  FrozenTrial(number=10, state=TrialState.COMPLETE, value=0.6143000000000001, datetime_start=datetime.datetime(2019, 12, 22, 1, 34, 24, 401109), 
+  datetime_complete=datetime.datetime(2019, 12, 22, 1, 48, 58, 271369), params={'mean': 0.3405992254786306, 'std': 0.4730105294531794}, 
+  distributions={'mean': UniformDistribution(high=0.9, low=0.1), 'std': UniformDistribution(high=0.9, low=0.1)}, user_attrs={}, system_attrs={'_number': 10}, intermediate_values={}, trial_id=10), 
+  
+  FrozenTrial(number=11, state=TrialState.COMPLETE, value=0.623, datetime_start=datetime.datetime(2019, 12, 22, 1, 48, 58, 271659), 
+  datetime_complete=datetime.datetime(2019, 12, 22, 2, 3, 36, 310330), params={'mean': 0.1078867501355451, 'std': 0.48708355626962174}, 
+  distributions={'mean': UniformDistribution(high=0.9, low=0.1), 'std': UniformDistribution(high=0.9, low=0.1)}, user_attrs={}, system_attrs={'_number': 11}, intermediate_values={}, trial_id=11),
+  
+   FrozenTrial(number=12, state=TrialState.COMPLETE, value=0.6126, datetime_start=datetime.datetime(2019, 12, 22, 2, 3, 36, 310620), 
+   datetime_complete=datetime.datetime(2019, 12, 22, 2, 18, 21, 759989), params={'mean': 0.40239499512406773, 'std': 0.5477752419176541}, 
+   distributions={'mean': UniformDistribution(high=0.9, low=0.1), 'std': UniformDistribution(high=0.9, low=0.1)}, user_attrs={}, system_attrs={'_number': 12}, intermediate_values={}, trial_id=12), 
+   
+   FrozenTrial(number=13, state=TrialState.COMPLETE, value=0.6115999999999999, datetime_start=datetime.datetime(2019, 12, 22, 2, 18, 21, 760330),
+　　datetime_complete=datetime.datetime(2019, 12, 22, 2, 32, 59, 966501), params={'mean': 0.4350566435483523, 'std': 0.4080434882461904}, 
+　　distributions={'mean': UniformDistribution(high=0.9, low=0.1), 'std': UniformDistribution(high=0.9, low=0.1)}, user_attrs={}, system_attrs={'_number': 13}, intermediate_values={}, trial_id=13), 
+
+　　FrozenTrial(number=14, state=TrialState.COMPLETE, value=0.6139, datetime_start=datetime.datetime(2019, 12, 22, 2, 32, 59, 966798), 
+　　datetime_complete=datetime.datetime(2019, 12, 22, 2, 47, 49, 81049), params={'mean': 0.2222047912457381, 'std': 0.3896344236307116}, 
+　　distributions={'mean': UniformDistribution(high=0.9, low=0.1), 'std': UniformDistribution(high=0.9, low=0.1)}, user_attrs={}, system_attrs={'_number': 14}, intermediate_values={}, trial_id=14),
+
+　 FrozenTrial(number=15, state=TrialState.COMPLETE, value=0.6133, datetime_start=datetime.datetime(2019, 12, 22, 2, 47, 49, 81601), 
+　 datetime_complete=datetime.datetime(2019, 12, 22, 3, 2, 27, 978462), params={'mean': 0.4208815907859384, 'std': 0.4221890374386511}, 
+   distributions={'mean': UniformDistribution(high=0.9, low=0.1), 'std': UniformDistribution(high=0.9, low=0.1)}, user_attrs={}, system_attrs={'_number': 15}, intermediate_values={}, trial_id=15), 
+   
+   FrozenTrial(number=16, state=TrialState.COMPLETE, value=0.6186, datetime_start=datetime.datetime(2019, 12, 22, 3, 2, 27, 978764), 
+   datetime_complete=datetime.datetime(2019, 12, 22, 3, 17, 18, 317362), params={'mean': 0.18689579604630902, 'std': 0.36078652594343796}, 
+   distributions={'mean': UniformDistribution(high=0.9, low=0.1), 'std': UniformDistribution(high=0.9, low=0.1)}, user_attrs={}, system_attrs={'_number': 16}, intermediate_values={}, trial_id=16), 
+   
+   FrozenTrial(number=17, state=TrialState.COMPLETE, value=0.6114999999999999, datetime_start=datetime.datetime(2019, 12, 22, 3, 17, 18, 317656), 
+   datetime_complete=datetime.datetime(2019, 12, 22, 3, 31, 57, 509500), params={'mean': 0.3929525279047702, 'std': 0.8574759580350743}, 
+   distributions={'mean': UniformDistribution(high=0.9, low=0.1), 'std': UniformDistribution(high=0.9, low=0.1)}, user_attrs={}, system_attrs={'_number': 17}, intermediate_values={}, trial_id=17), 
+   
+   FrozenTrial(number=18, state=TrialState.COMPLETE, value=0.6233, datetime_start=datetime.datetime(2019, 12, 22, 3, 31, 57, 509929), 
+   datetime_complete=datetime.datetime(2019, 12, 22, 3, 46, 44, 201388), params={'mean': 0.3235704804614445, 'std': 0.8669007242823924}, 
+   distributions={'mean': UniformDistribution(high=0.9, low=0.1), 'std': UniformDistribution(high=0.9, low=0.1)}, user_attrs={}, system_attrs={'_number': 18}, intermediate_values={}, trial_id=18), 
+   
+   FrozenTrial(number=19, state=TrialState.COMPLETE, value=0.6262, datetime_start=datetime.datetime(2019, 12, 22, 3, 46, 44, 201679), 
+   datetime_complete=datetime.datetime(2019, 12, 22, 3, 56, 30, 655738), params={'mean': 0.15943810661146876, 'std': 0.889277223261965}, 
+   distributions={'mean': UniformDistribution(high=0.9, low=0.1), 'std': UniformDistribution(high=0.9, low=0.1)}, user_attrs={}, system_attrs={'_number': 19}, intermediate_values={}, trial_id=19), 
+   
+   FrozenTrial(number=20, state=TrialState.COMPLETE, value=0.6134, datetime_start=datetime.datetime(2019, 12, 22, 3, 56, 30, 656033), 
+   datetime_complete=datetime.datetime(2019, 12, 22, 4, 6, 17, 58581), params={'mean': 0.34805607024980534, 'std': 0.772687820576912}, 
+   distributions={'mean': UniformDistribution(high=0.9, low=0.1), 'std': UniformDistribution(high=0.9, low=0.1)}, user_attrs={}, system_attrs={'_number': 20}, intermediate_values={}, trial_id=20), 
+   
+   FrozenTrial(number=21, state=TrialState.COMPLETE, value=0.6154, datetime_start=datetime.datetime(2019, 12, 22, 4, 6, 17, 58869), 
+   datetime_complete=datetime.datetime(2019, 12, 22, 4, 16, 2, 621947), params={'mean': 0.4485378637016515, 'std': 0.5795256096528123}, 
+   distributions={'mean': UniformDistribution(high=0.9, low=0.1), 'std': UniformDistribution(high=0.9, low=0.1)}, user_attrs={}, system_attrs={'_number': 21}, intermediate_values={}, trial_id=21), 
+   
+   FrozenTrial(number=22, state=TrialState.COMPLETE, value=0.6273, datetime_start=datetime.datetime(2019, 12, 22, 4, 16, 2, 622244), 
+   datetime_complete=datetime.datetime(2019, 12, 22, 4, 26, 23, 391131), params={'mean': 0.3846045596942709, 'std': 0.12649759978426367}, 
+   distributions={'mean': UniformDistribution(high=0.9, low=0.1), 'std': UniformDistribution(high=0.9, low=0.1)}, user_attrs={}, system_attrs={'_number': 22}, intermediate_values={}, trial_id=22), 
+   
+   FrozenTrial(number=23, state=TrialState.COMPLETE, value=0.6146, datetime_start=datetime.datetime(2019, 12, 22, 4, 26, 23, 391429), 
+   datetime_complete=datetime.datetime(2019, 12, 22, 4, 36, 40, 8902), params={'mean': 0.5284318119068137, 'std': 0.30310491375699017}, 
+   distributions={'mean': UniformDistribution(high=0.9, low=0.1), 'std': UniformDistribution(high=0.9, low=0.1)}, user_attrs={}, system_attrs={'_number': 23}, intermediate_values={}, trial_id=23), 
+   
+   FrozenTrial(number=24, state=TrialState.COMPLETE, value=0.6129, datetime_start=datetime.datetime(2019, 12, 22, 4, 36, 40, 9210), 
+   datetime_complete=datetime.datetime(2019, 12, 22, 4, 47, 0, 370985), params={'mean': 0.25239036513203206, 'std': 0.4477644364938732}, 
+   distributions={'mean': UniformDistribution(high=0.9, low=0.1), 'std': UniformDistribution(high=0.9, low=0.1)}, user_attrs={}, system_attrs={'_number': 24}, intermediate_values={}, trial_id=24), 
+   
+   FrozenTrial(number=25, state=TrialState.COMPLETE, value=0.6153, datetime_start=datetime.datetime(2019, 12, 22, 4, 47, 0, 371303), 
+   datetime_complete=datetime.datetime(2019, 12, 22, 4, 56, 55, 903862), params={'mean': 0.4722862161855684, 'std': 0.8126013951840323}, 
+   distributions={'mean': UniformDistribution(high=0.9, low=0.1), 'std': UniformDistribution(high=0.9, low=0.1)}, user_attrs={}, system_attrs={'_number': 25}, intermediate_values={}, trial_id=25), 
+   
+   FrozenTrial(number=26, state=TrialState.COMPLETE, value=0.6113, datetime_start=datetime.datetime(2019, 12, 22, 4, 56, 55, 904214), 
+   datetime_complete=datetime.datetime(2019, 12, 22, 5, 6, 37, 595196), params={'mean': 0.6771289324797489, 'std': 0.528455120380907}, 
+   distributions={'mean': UniformDistribution(high=0.9, low=0.1), 'std': UniformDistribution(high=0.9, low=0.1)}, user_attrs={}, system_attrs={'_number': 26}, intermediate_values={}, trial_id=26), 
+   
+   FrozenTrial(number=27, state=TrialState.COMPLETE, value=0.6242, datetime_start=datetime.datetime(2019, 12, 22, 5, 6, 37, 595486), 
+   datetime_complete=datetime.datetime(2019, 12, 22, 5, 16, 17, 989349), params={'mean': 0.8938345553249099, 'std': 0.6415883294342776}, 
+   distributions={'mean': UniformDistribution(high=0.9, low=0.1), 'std': UniformDistribution(high=0.9, low=0.1)}, user_attrs={}, system_attrs={'_number': 27}, intermediate_values={}, trial_id=27), 
+   
+   FrozenTrial(number=28, state=TrialState.COMPLETE, value=0.6214999999999999, datetime_start=datetime.datetime(2019, 12, 22, 5, 16, 17, 989644), 
+   datetime_complete=datetime.datetime(2019, 12, 22, 5, 25, 56, 674948), params={'mean': 0.7229638443372934, 'std': 0.5741073871896861}, 
+   distributions={'mean': UniformDistribution(high=0.9, low=0.1), 'std': UniformDistribution(high=0.9, low=0.1)}, user_attrs={}, system_attrs={'_number': 28}, intermediate_values={}, trial_id=28), 
+   
+   FrozenTrial(number=29, state=TrialState.COMPLETE, value=0.6225, datetime_start=datetime.datetime(2019, 12, 22, 5, 25, 56, 675245), 
+   datetime_complete=datetime.datetime(2019, 12, 22, 5, 35, 37, 733889), params={'mean': 0.7935531005159246, 'std': 0.5274277245228745}, 
+   distributions={'mean': UniformDistribution(high=0.9, low=0.1), 'std': UniformDistribution(high=0.9, low=0.1)}, user_attrs={}, system_attrs={'_number': 29}, intermediate_values={}, trial_id=29), 
+   
+   FrozenTrial(number=30, state=TrialState.COMPLETE, value=0.6185, datetime_start=datetime.datetime(2019, 12, 22, 5, 35, 37, 734180), 
+   datetime_complete=datetime.datetime(2019, 12, 22, 5, 45, 20, 27437), params={'mean': 0.6612376658802633, 'std': 0.8038580509457967}, 
+   distributions={'mean': UniformDistribution(high=0.9, low=0.1), 'std': UniformDistribution(high=0.9, low=0.1)}, user_attrs={}, system_attrs={'_number': 30}, intermediate_values={}, trial_id=30), 
+   
+   FrozenTrial(number=31, state=TrialState.COMPLETE, value=0.6222, datetime_start=datetime.datetime(2019, 12, 22, 5, 45, 20, 27727), 
+   datetime_complete=datetime.datetime(2019, 12, 22, 5, 55, 1, 890104), params={'mean': 0.8363484103921167, 'std': 0.3496846950844217}, 
+   distributions={'mean': UniformDistribution(high=0.9, low=0.1), 'std': UniformDistribution(high=0.9, low=0.1)}, user_attrs={}, system_attrs={'_number': 31}, intermediate_values={}, trial_id=31), 
+   
+   FrozenTrial(number=32, state=TrialState.COMPLETE, value=0.6211, datetime_start=datetime.datetime(2019, 12, 22, 5, 55, 1, 890396), 
+   datetime_complete=datetime.datetime(2019, 12, 22, 6, 4, 42, 179049), params={'mean': 0.594046983826136, 'std': 0.23445393974469403}, 
+   distributions={'mean': UniformDistribution(high=0.9, low=0.1), 'std': UniformDistribution(high=0.9, low=0.1)}, user_attrs={}, system_attrs={'_number': 32}, intermediate_values={}, trial_id=32), 
+   
+   FrozenTrial(number=33, state=TrialState.COMPLETE, value=0.6128, datetime_start=datetime.datetime(2019, 12, 22, 6, 4, 42, 179308), 
+   datetime_complete=datetime.datetime(2019, 12, 22, 6, 14, 26, 371140), params={'mean': 0.38074708410983527, 'std': 0.4977404439084584}, 
+   distributions={'mean': UniformDistribution(high=0.9, low=0.1), 'std': UniformDistribution(high=0.9, low=0.1)}, user_attrs={}, system_attrs={'_number': 33}, intermediate_values={}, trial_id=33), 
+   
+   FrozenTrial(number=34, state=TrialState.COMPLETE, value=0.6174, datetime_start=datetime.datetime(2019, 12, 22, 6, 14, 26, 371566), 
+   datetime_complete=datetime.datetime(2019, 12, 22, 6, 24, 9, 723342), params={'mean': 0.5077920152535167, 'std': 0.7083197001725413}, 
+   distributions={'mean': UniformDistribution(high=0.9, low=0.1), 'std': UniformDistribution(high=0.9, low=0.1)}, user_attrs={}, system_attrs={'_number': 34}, intermediate_values={}, trial_id=34), 
+   
+   FrozenTrial(number=35, state=TrialState.COMPLETE, value=0.6181, datetime_start=datetime.datetime(2019, 12, 22, 6, 24, 9, 723641), 
+   datetime_complete=datetime.datetime(2019, 12, 22, 6, 33, 56, 545887), params={'mean': 0.2860053730630693, 'std': 0.4104221352118655}, 
+   distributions={'mean': UniformDistribution(high=0.9, low=0.1), 'std': UniformDistribution(high=0.9, low=0.1)}, user_attrs={}, system_attrs={'_number': 35}, intermediate_values={}, trial_id=35), 
+   
+   FrozenTrial(number=36, state=TrialState.COMPLETE, value=0.6193, datetime_start=datetime.datetime(2019, 12, 22, 6, 33, 56, 546177), 
+   datetime_complete=datetime.datetime(2019, 12, 22, 6, 43, 40, 640052), params={'mean': 0.5651883465648516, 'std': 0.6102258250752284}, 
+   distributions={'mean': UniformDistribution(high=0.9, low=0.1), 'std': UniformDistribution(high=0.9, low=0.1)}, user_attrs={}, system_attrs={'_number': 36}, intermediate_values={}, trial_id=36), 
+   
+   FrozenTrial(number=37, state=TrialState.COMPLETE, value=0.615, datetime_start=datetime.datetime(2019, 12, 22, 6, 43, 40, 640318), 
+   datetime_complete=datetime.datetime(2019, 12, 22, 6, 53, 26, 634447), params={'mean': 0.4476701229109509, 'std': 0.5119342904774671}, 
+   distributions={'mean': UniformDistribution(high=0.9, low=0.1), 'std': UniformDistribution(high=0.9, low=0.1)}, user_attrs={}, system_attrs={'_number': 37}, intermediate_values={}, trial_id=37), 
+   
+   FrozenTrial(number=38, state=TrialState.COMPLETE, value=0.6232, datetime_start=datetime.datetime(2019, 12, 22, 6, 53, 26, 634742), 
+   datetime_complete=datetime.datetime(2019, 12, 22, 7, 3, 14, 45164), params={'mean': 0.7297772270126133, 'std': 0.22119933877832093}, 
+   distributions={'mean': UniformDistribution(high=0.9, low=0.1), 'std': UniformDistribution(high=0.9, low=0.1)}, user_attrs={}, system_attrs={'_number': 38}, intermediate_values={}, trial_id=38), 
+   
+   FrozenTrial(number=39, state=TrialState.COMPLETE, value=0.6209, datetime_start=datetime.datetime(2019, 12, 22, 7, 3, 14, 45422), 
+   datetime_complete=datetime.datetime(2019, 12, 22, 7, 13, 14, 453461), params={'mean': 0.631230560429669, 'std': 0.703827510859527}, 
+   distributions={'mean': UniformDistribution(high=0.9, low=0.1), 'std': UniformDistribution(high=0.9, low=0.1)}, user_attrs={}, system_attrs={'_number': 39}, intermediate_values={}, trial_id=39), 
+   
+   FrozenTrial(number=40, state=TrialState.COMPLETE, value=0.6105, datetime_start=datetime.datetime(2019, 12, 22, 7, 13, 14, 453728), 
+   datetime_complete=datetime.datetime(2019, 12, 22, 7, 23, 38, 453939), params={'mean': 0.29596120403181914, 'std': 0.3577751796340769}, 
+   distributions={'mean': UniformDistribution(high=0.9, low=0.1), 'std': UniformDistribution(high=0.9, low=0.1)}, user_attrs={}, system_attrs={'_number': 40}, intermediate_values={}, trial_id=40), 
+   
+   FrozenTrial(number=41, state=TrialState.COMPLETE, value=0.6185, datetime_start=datetime.datetime(2019, 12, 22, 7, 23, 38, 454206), 
+   datetime_complete=datetime.datetime(2019, 12, 22, 7, 33, 56, 746578), params={'mean': 0.29312163825347687, 'std': 0.33842313561626514}, 
+   distributions={'mean': UniformDistribution(high=0.9, low=0.1), 'std': UniformDistribution(high=0.9, low=0.1)}, user_attrs={}, system_attrs={'_number': 41}, intermediate_values={}, trial_id=41), 
+   
+   FrozenTrial(number=42, state=TrialState.COMPLETE, value=0.6125, datetime_start=datetime.datetime(2019, 12, 22, 7, 33, 56, 746847), 
+   datetime_complete=datetime.datetime(2019, 12, 22, 7, 44, 16, 980459), params={'mean': 0.3596490373317497, 'std': 0.45491184331378853}, 
+   distributions={'mean': UniformDistribution(high=0.9, low=0.1), 'std': UniformDistribution(high=0.9, low=0.1)}, user_attrs={}, system_attrs={'_number': 42}, intermediate_values={}, trial_id=42), 
+   
+   FrozenTrial(number=43, state=TrialState.COMPLETE, value=0.6149, datetime_start=datetime.datetime(2019, 12, 22, 7, 44, 16, 980742), 
+   datetime_complete=datetime.datetime(2019, 12, 22, 7, 54, 33, 845722), params={'mean': 0.24459436703827694, 'std': 0.38651838978974307}, 
+   distributions={'mean': UniformDistribution(high=0.9, low=0.1), 'std': UniformDistribution(high=0.9, low=0.1)}, user_attrs={}, system_attrs={'_number': 43}, intermediate_values={}, trial_id=43), 
+   
+   FrozenTrial(number=44, state=TrialState.COMPLETE, value=0.6165, datetime_start=datetime.datetime(2019, 12, 22, 7, 54, 33, 845993), 
+   datetime_complete=datetime.datetime(2019, 12, 22, 8, 4, 50, 758094), params={'mean': 0.4269769990425367, 'std': 0.45787908264040855}, 
+   distributions={'mean': UniformDistribution(high=0.9, low=0.1), 'std': UniformDistribution(high=0.9, low=0.1)}, user_attrs={}, system_attrs={'_number': 44}, intermediate_values={}, trial_id=44), 
+   
+   FrozenTrial(number=45, state=TrialState.COMPLETE, value=0.6188, datetime_start=datetime.datetime(2019, 12, 22, 8, 4, 50, 758363), 
+   datetime_complete=datetime.datetime(2019, 12, 22, 8, 15, 11, 357593), params={'mean': 0.19769041980379726, 'std': 0.32252303489582246}, 
+   distributions={'mean': UniformDistribution(high=0.9, low=0.1), 'std': UniformDistribution(high=0.9, low=0.1)}, user_attrs={}, system_attrs={'_number': 45}, intermediate_values={}, trial_id=45), 
+   
+   FrozenTrial(number=46, state=TrialState.COMPLETE, value=0.6161, datetime_start=datetime.datetime(2019, 12, 22, 8, 15, 11, 357860), 
+   datetime_complete=datetime.datetime(2019, 12, 22, 8, 25, 27, 224696), params={'mean': 0.3059179181177622, 'std': 0.2793984861810056}, 
+   distributions={'mean': UniformDistribution(high=0.9, low=0.1), 'std': UniformDistribution(high=0.9, low=0.1)}, user_attrs={}, system_attrs={'_number': 46}, intermediate_values={}, trial_id=46), 
+   
+   FrozenTrial(number=47, state=TrialState.COMPLETE, value=0.6194, datetime_start=datetime.datetime(2019, 12, 22, 8, 25, 27, 224973), 
+   datetime_complete=datetime.datetime(2019, 12, 22, 8, 35, 42, 603569), params={'mean': 0.49489532757671534, 'std': 0.5466796310885076}, 
+   distributions={'mean': UniformDistribution(high=0.9, low=0.1), 'std': UniformDistribution(high=0.9, low=0.1)}, user_attrs={}, system_attrs={'_number': 47}, intermediate_values={}, trial_id=47), 
+   
+   FrozenTrial(number=48, state=TrialState.COMPLETE, value=0.6126, datetime_start=datetime.datetime(2019, 12, 22, 8, 35, 42, 603882), 
+   datetime_complete=datetime.datetime(2019, 12, 22, 8, 46, 0, 4820), params={'mean': 0.2708680243072349, 'std': 0.41486593957407314}, 
+   distributions={'mean': UniformDistribution(high=0.9, low=0.1), 'std': UniformDistribution(high=0.9, low=0.1)}, user_attrs={}, system_attrs={'_number': 48}, intermediate_values={}, trial_id=48), 
+   
+   FrozenTrial(number=49, state=TrialState.COMPLETE, value=0.6275999999999999, datetime_start=datetime.datetime(2019, 12, 22, 8, 46, 0, 5092), 
+   datetime_complete=datetime.datetime(2019, 12, 22, 8, 56, 17, 490546), params={'mean': 0.15839349920404439, 'std': 0.23163337205202883}, 
+   distributions={'mean': UniformDistribution(high=0.9, low=0.1), 'std': UniformDistribution(high=0.9, low=0.1)}, user_attrs={}, system_attrs={'_number': 49}, intermediate_values={}, trial_id=49)]
