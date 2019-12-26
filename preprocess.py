@@ -85,52 +85,92 @@ def test(args, model, device, test_loader):
 
     return 1 - correct / len(test_loader.dataset)
 
-def objective(trial):
+"""
+def gpu_objective(device):
 
-    mean1 = trial.suggest_uniform("mean1",0.1,0.9)
-    mean2 = trial.suggest_uniform("mean1",0.1,0.9)
-    mean3 = trial.suggest_uniform("mean1",0.1,0.9)
+    def objective(trial):
 
-    std1 = trial.suggest_uniform("std1",0.1,0.9)
-    std2 = trial.suggest_uniform("std2",0.1,0.9)
-    std3 = trial.suggest_uniform("std3",0.1,0.9)
+        mean1 = trial.suggest_uniform("mean1",0.1,0.9)
+        mean2 = trial.suggest_uniform("mean2",0.1,0.9)
+        mean3 = trial.suggest_uniform("mean3",0.1,0.9)
 
-    model = Net().to(device)
-    optimizer = optim.Adadelta(model.parameters(), lr=1.0)
+        std1 = trial.suggest_uniform("std1",0.1,0.9)
+        std2 = trial.suggest_uniform("std2",0.1,0.9)
+        std3 = trial.suggest_uniform("std3",0.1,0.9)
 
-    preprocess_func = Compose([transforms.ToTensor(),transforms.Normalize((mean1,mean2,mean3),(std1,std2,std3))])
+        model = Net().to(device)
+        optimizer = optim.Adadelta(model.parameters(), lr=1.0)
 
-    train_loader = torch.utils.data.DataLoader(
-        datasets.CIFAR100('../data', train=True, download=True,
-                          transform=preprocess_func),
-        batch_size=64, shuffle=True, **kwargs)
-    test_loader = torch.utils.data.DataLoader(
-        datasets.CIFAR100('../data', train=False,
-                          transform=preprocess_func),
-        batch_size=1000, shuffle=True, **kwargs)
+        preprocess_func = Compose([transforms.ToTensor(),transforms.Normalize((mean1,mean2,mean3),(std1,std2,std3))])
 
-    scheduler = StepLR(optimizer, step_size=1, gamma=args.gamma)
+        train_loader = torch.utils.data.DataLoader(
+            datasets.CIFAR100('../data', train=True, download=True,
+                            transform=preprocess_func),
+            batch_size=64, shuffle=True, **kwargs)
+        test_loader = torch.utils.data.DataLoader(
+            datasets.CIFAR100('../data', train=False,
+                            transform=preprocess_func),
+            batch_size=1000, shuffle=True, **kwargs)
 
-    EPOCH = 10
-    for epoch in range(EPOCH):
-        train(args, model, device, train_loader, optimizer, epoch)
-        error_rate = test(args, model, device, test_loader)
-        scheduler.step()
+        scheduler = StepLR(optimizer, step_size=1, gamma=args.gamma)
 
-    return error_rate
+        EPOCH = 10
+        for epoch in range(EPOCH):
+            train(args, model, device, train_loader, optimizer, epoch)
+            error_rate = test(args, model, device, test_loader)
+            scheduler.step()
 
-def select_preprocess(args: Namespace, task: Task) -> Compose:
+        return error_rate
+
+    return objective
+"""
+
+def select_preprocess(args: Namespace, task: Task,device,kwargs) -> Compose:
     ''' Select optimal preprocess
     Given task, this method returns optimal preprocess function.
     '''
     # TODO: Implement preprocess selection
     # preprocess_func = Compose([])
 
+    def objective(trial):
+
+        mean1 = trial.suggest_uniform("mean1",0.1,0.9)
+        mean2 = trial.suggest_uniform("mean2",0.1,0.9)
+        mean3 = trial.suggest_uniform("mean3",0.1,0.9)
+
+        std1 = trial.suggest_uniform("std1",0.1,0.9)
+        std2 = trial.suggest_uniform("std2",0.1,0.9)
+        std3 = trial.suggest_uniform("std3",0.1,0.9)
+
+        model = Net().to(device)
+        optimizer = optim.Adadelta(model.parameters(), lr=1.0)
+
+        preprocess_func = Compose([transforms.ToTensor(),transforms.Normalize((mean1,mean2,mean3),(std1,std2,std3))])
+
+        train_loader = torch.utils.data.DataLoader(
+            datasets.CIFAR100('../data', train=True, download=True,
+                            transform=preprocess_func),
+            batch_size=64, shuffle=True, **kwargs)
+        test_loader = torch.utils.data.DataLoader(
+            datasets.CIFAR100('../data', train=False,
+                            transform=preprocess_func),
+            batch_size=1000, shuffle=True, **kwargs)
+
+        scheduler = StepLR(optimizer, step_size=1, gamma=args.gamma)
+
+        EPOCH = 10
+        for epoch in range(EPOCH):
+            train(args, model, device, train_loader, optimizer, epoch)
+            error_rate = test(args, model, device, test_loader)
+            scheduler.step()
+
+        return error_rate
+        
+    #最適なパラメータ
     TRIAL_SIZE = 50
     study = optuna.create_study()
     study.optimize(objective,n_trials=TRIAL_SIZE)
 
-    #最適なパラメータ
     mean1 = study.best_params['mean1']
     mean2 = study.best_params['mean2']
     mean3 = study.best_params['mean3']
@@ -187,12 +227,10 @@ if __name__ == '__main__':
 
     kwargs = {'num_workers': 1, 'pin_memory': True} if use_cuda else {}
 
-    preprocess_func = select_preprocess(args,task)
+    preprocess_func = select_preprocess(args,task,device,kwargs)
     print(preprocess_func)
 
 #最適化された時の目的関数の値
 #study.best_value
 #全試行結果
 #study.trials
-
-
