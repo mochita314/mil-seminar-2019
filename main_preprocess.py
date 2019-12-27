@@ -114,6 +114,7 @@ def main():
 
 
 if __name__ == '__main__':
+    
     parser = argparse.ArgumentParser(description='PyTorch MNIST Example')
     parser.add_argument('--batch-size', type=int, default=64, metavar='N',
                         help='input batch size for training (default: 64)')
