@@ -158,7 +158,7 @@ def select_preprocess(args: Namespace, task: Task,device,kwargs) -> Compose:
 
         scheduler = StepLR(optimizer, step_size=1, gamma=args.gamma)
 
-        EPOCH = 10
+        EPOCH = args.epochs
         for epoch in range(EPOCH):
             train(args, model, device, train_loader, optimizer, epoch)
             error_rate = test(args, model, device, test_loader)
@@ -167,7 +167,7 @@ def select_preprocess(args: Namespace, task: Task,device,kwargs) -> Compose:
         return error_rate
         
     #最適なパラメータ
-    TRIAL_SIZE = 50
+    TRIAL_SIZE = args.trial-size
     study = optuna.create_study()
     study.optimize(objective,n_trials=TRIAL_SIZE)
 
@@ -178,6 +178,14 @@ def select_preprocess(args: Namespace, task: Task,device,kwargs) -> Compose:
     std1 = study.best_params['std1']
     std2 = study.best_params['std1']
     std3 = study.best_params['std1']
+
+    file = open('best_value.txt','w')
+    file.write(study.best_value)
+    file.close()
+
+    file = open('trials.txt','w')
+    file.write(study.trials)
+    file.close()
 
     preprocess_func = Compose([transforms.ToTensor(),transforms.Normalize((mean1,mean2,mean3),(std1,std2,std3))])
     
@@ -193,6 +201,8 @@ if __name__ == '__main__':
                         help='input batch size for testing (default: 1000)')
     parser.add_argument('--epochs', type=int, default=14, metavar='N',
                         help='number of epochs to train (default: 14)')
+    parser.add_argument('--trial-size', '-s', type=int,
+                        default = 50, help='times of trial')
     parser.add_argument('--lr', type=float, default=1.0, metavar='LR',
                         help='learning rate (default: 1.0)')
     parser.add_argument('--gamma', type=float, default=0.7, metavar='M',
@@ -231,6 +241,6 @@ if __name__ == '__main__':
     print(preprocess_func)
 
 #最適化された時の目的関数の値
-#study.best_value
+# study.best_value
 #全試行結果
 #study.trials
